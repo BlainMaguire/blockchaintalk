@@ -114,7 +114,7 @@ More computationally expensive to get ahead of network than to generate new bloc
 --
 ### Recent Blockchain Implementations
 
-*Smart Contracts*
+*[Smart Contracts](https://www.ethereum.org/token)*
 
 * decentralized network confirms that a contract of any kind was executed properly
 
@@ -138,12 +138,16 @@ Privacy - pseudonymous, no need to disclose personal information to authenicate/
 --
 ### Who's using it?
 
-Bank Of Ireland - successful trail April 16
+Bank Of Ireland - successful trial (April 2016)
 
 Eestipank (Bank of Estonia, estonia has lowest card fraud rate in Eurozone)
 --
 ### Build your own
 
-Ethereum (ethereum.org) is a good start
+[Ethereum](ethereum.org) is a good start
 
 The startup has written a web app and programming language to define contracts (open source)
+
+[Multichain](http://www.multichain.com/)
+--
+### Questions?

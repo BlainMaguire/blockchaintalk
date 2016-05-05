@@ -5,305 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Blockchain Introduction</title>
   <style type="text/css">
-    /* Color Palette Based on Monokai
-
-white       : #fafafa
-light grey  : #efefef
-grey        : #75715e
-dark grey   : #272822
-black       : #191919
-
-light blue  : #66d9ef
-blue        : #1db4d0
-lavender    : #bf79db
-magenta     : #f92672
-light green : #a6e22e
-*/
-
-/* Local Fonts */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('fonts/opensans/300.woff2') format('woff2'),
-       url('fonts/opensans/300.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/opensans/400.woff2') format('woff2'),
-       url('fonts/opensans/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/opensans/600.woff2') format('woff2'),
-       url('fonts/opensans/600.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/opensans/700.woff2') format('woff2'),
-       url('fonts/opensans/700.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: url('fonts/opensans/800.woff2') format('woff2'),
-       url('fonts/opensans/800.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: url('fonts/opensans/300i.woff2') format('woff2'),
-       url('fonts/opensans/300i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/opensans/400i.woff2') format('woff2'),
-       url('fonts/opensans/400i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: url('fonts/opensans/600i.woff2') format('woff2'),
-       url('fonts/opensans/600i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/opensans/700i.woff2') format('woff2'),
-       url('fonts/opensans/700i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 800;
-  src: url('fonts/opensans/800i.woff2') format('woff2'),
-       url('fonts/opensans/800i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/merriweather/400.woff2') format('woff2'),
-       url('fonts/merriweather/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/merriweather/700.woff2') format('woff2'),
-       url('fonts/merriweather/700.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 900;
-  src: url('fonts/merriweather/900.woff2') format('woff2'),
-       url('fonts/merriweather/900.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/merriweather/400i.woff2') format('woff2'),
-       url('fonts/merriweather/400i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/merriweather/700i.woff2') format('woff2'),
-       url('fonts/merriweather/700i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 900;
-  src: url('fonts/merriweather/900i.woff2') format('woff2'),
-       url('fonts/merriweather/900i.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/fira/400.woff2') format('woff2'),
-       url('fonts/fira/400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 500;
-  src: url('fonts/fira/500.woff2') format('woff2'),
-       url('fonts/fira/500.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/fira/700.woff2') format('woff2'),
-       url('fonts/fira/700.woff') format('woff');
-}
-
-/* Theme Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
+    body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
   font-size: 100%;
-  color: #fafafa;
-  background-color: #191919;
 }
 
-/* Custom Slide Styles */
-#slide-1 {
-  background: #222 url(wireball.png) center center no-repeat;
-  background-size: cover;
-}
-
-#slide-1 h1 {
-  text-shadow: 1px 2px 4px #191919;
-}
-
-#slide-1 p {
-  text-shadow: 1px 1px 1px #191919;
-}
-
-.center {
-  text-align: center;
-}
-
-img.badge {
-  height: 128px;
-  width: 128px !important;
-  border-radius: 50% !important;
-}
-
-/* Presentation Styles */
 .slide {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 100px;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: #f7f7f7;
 }
 
 .slide-content {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  font-size: 200%;
-  font-weight: 200;
-  line-height: 1.375;
+  width: 800px;
+  height: 600px;
   overflow: hidden;
-}
+  margin: 80px auto 0 auto;
+  padding: 30px;
 
-.slide-content img {
-  width: 100%;
-  border-radius: 3px;
+  font-weight: 200;
+  font-size: 200%;
+  line-height: 1.375;
 }
 
 .controls {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .arrow {
+  width: 0; height: 0;
+  border: 30px solid #333;
   float: left;
-  height: 0;
-  width: 0;
-  margin-right: 15px;
-  border: 15px solid #272822;
+  margin-right: 30px;
+
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .prev {
   border-top-color: transparent;
-  border-right-width: 25px;
   border-bottom-color: transparent;
   border-left-color: transparent;
+
   border-left-width: 0;
+  border-right-width: 50px;
 }
 
 .next {
   border-top-color: transparent;
-  border-right-color: transparent;
-  border-right-width: 0;
   border-bottom-color: transparent;
-  border-left-width: 25px;
+  border-right-color: transparent;
+
+  border-left-width: 50px;
+  border-right-width: 0;
 }
 
 .prev:hover {
-  border-right-color: #efefef;
+  border-right-color: #888;
   cursor: pointer;
 }
 
 .next:hover {
-  border-left-color: #efefef;
+  border-left-color: #888;
   cursor: pointer;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Merriweather', serif;
-}
-
 h1 {
-  margin: 170px 0 0;
   font-size: 300%;
-  text-align: center;
   line-height: 1.2;
+  text-align: center;
+  margin: 170px 0 0;
 }
 
 h2 {
-  margin: 5px 0;
   font-size: 100%;
-  font-weight: 200;
-  text-align: center;
   line-height: 1.2;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: 200;
 }
 
 h3 {
-  margin: 0;
-  padding-bottom: 15px;
   font-size: 140%;
   line-height: 1.2;
-  border-bottom: 2px ridge #fafafa;
+  border-bottom: 1px solid #aaa;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 ul {
@@ -312,231 +107,54 @@ ul {
   line-height: 1.375;
 }
 
-blockquote {
-  padding-left: 20px;
-  margin-left: 0;
-  background: #272822;
-  border-left: 5px solid #efefef;
-  border-radius: 0 3px 3px 0;
-}
-
-blockquote p {
-  padding: .5em;
-  color: #efefef;
-}
-
-.left {
-  float: left;
-  width: 48%;
-}
-
-.right {
-  float: right;
-  width: 48%;
-}
-
 .author h1 {
-  margin-bottom: 30px;
   font-size: 170%;
   font-weight: 200;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .author h3 {
-  font-size: 95%;
   font-weight: 100;
   text-align: center;
+  font-size: 95%;
   border: none;
-}
-
-.author h3.twitter::before {
-  content: 'Twitter: ';
-}
-
-.author h3.github::before {
-  content: 'Github: ';
-}
-
-.author h3.email::before {
-  content: 'Email: ';
-}
-
-.author h3.url::before {
-  content: 'Web: ';
 }
 
 a {
   text-decoration: none;
-  color: #66d9ef;
+  color: #44a4dd;
 }
 
 a:hover {
-  color: #66d9ef;
-  border-bottom: 1px solid #66d9ef;
-}
-
-hr {
-  border: 1px solid #efefef;
+  color: #66b5ff;
 }
 
 pre {
-  font-size: 75%;
+  font-size: 60%;
   line-height: 1.3;
-}
-
-table td,
-table th {
-  padding-right: 3em;
-  text-align: left;
 }
 
 .progress {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: 0; left: 0; right: 0;
   height: 3px;
 }
 
 .progress-bar {
+  width: 0%;
   height: 3px;
-  width: 0;
-  background-color: #a6e22e;
-  -webkit-transition: width .15s ease-out;
-     -moz-transition: width .15s ease-out;
-       -o-transition: width .15s ease-out;
-          transition: width .15s ease-out;
+  background-color: #b4b4b4;
+
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
 }
 
 .hidden {
   display: none;
 }
-
-/* Code Highlighting */
-code {
-  padding: .1em .35em;
-  font-family: 'Fira Mono';
-  color: #fafafa;
-  background-color: #272822;
-  border-radius: 3px;
-}
-
-pre code {
-  display: block;
-  padding: .5em;
-  font-family: 'Fira Mono';
-  font-weight: 400;
-  overflow-y: hidden;
-  background: #272822;
-}
-
-pre .tag,
-pre .tag .title,
-pre .keyword,
-pre .literal,
-pre .change,
-pre .winutils,
-pre .flow,
-pre .lisp .title,
-pre .clojure .built_in,
-pre .nginx .title,
-pre .tex .special {
-  color: #f92672;
-}
-
-pre code {
-  color: #75715e;
-}
-
-pre code .constant {
-  color: #66d9ef;
-}
-
-pre .class .title {
-  color: #fafafa;
-}
-
-pre .attribute,
-pre .symbol,
-pre .symbol .string,
-pre .value,
-pre .regexp {
-  color: #bf79db;
-}
-
-pre .tag .value,
-pre .string,
-pre .subst,
-pre .title,
-pre .haskell .type,
-pre .preprocessor,
-pre .ruby .class .parent,
-pre .built_in,
-pre .sql .aggregate,
-pre .django .template_tag,
-pre .django .variable,
-pre .smalltalk .class,
-pre .javadoc,
-pre .django .filter .argument,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .attr_selector,
-pre .pseudo,
-pre .addition,
-pre .stream,
-pre .envvar,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .tex .command,
-pre .prompt {
-  color: #a6e22e;
-}
-
-pre .comment,
-pre .java .annotation,
-pre .python .decorator,
-pre .template_comment,
-pre .pi,
-pre .doctype,
-pre .deletion,
-pre .shebang,
-pre .apache .sqbracket,
-pre .tex .formula {
-  color: #75715e;
-}
-
-pre .keyword,
-pre .literal,
-pre .css .id,
-pre .phpdoc,
-pre .title,
-pre .haskell .type,
-pre .vbscript .built_in,
-pre .sql .aggregate,
-pre .rsl .built_in,
-pre .smalltalk .class,
-pre .diff .header,
-pre .chunk,
-pre .winutils,
-pre .bash .variable,
-pre .apache .tag,
-pre .tex .special,
-pre .request,
-pre .status {
-  /* font-weight: 600; */
-}
-
-pre .coffeescript .javascript,
-pre .javascript .xml,
-pre .tex .formula,
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .xml .css,
-pre .xml .cdata {
-  opacity: .5;
-}
-
-/* Responsiveness */
 
 @media (max-width: 850px) {
 
@@ -550,34 +168,31 @@ pre .xml .cdata {
 
   img {
     width: 100%;
-    border-radius: 3px;
   }
 
   h1 {
     margin-top: 120px;
   }
 
-  .prev,
-  .prev:hover {
-    border-right-color: rgba(135, 135, 135, .5);
+  .prev, .prev:hover {
+    border-right-color: rgba(135, 135, 135, 0.5);
   }
 
-  .next,
-  .next:hover {
-    border-left-color: rgba(135, 135, 135, .5);
+  .next, .next:hover {
+    border-left-color: rgba(135, 135, 135, 0.5);
   }
 }
 
 @media (max-width: 480px) {
   body {
-    overflow: hidden;
     font-size: 50%;
+    overflow: hidden;
   }
 
   .slide-content {
-    height: 340px;
     padding: 10px;
     margin-top: 10px;
+    height: 340px;
   }
 
   h1 {
@@ -603,23 +218,22 @@ pre .xml .cdata {
   }
 
   html {
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow: visible;
   }
 
   body {
-    float: none !important;
-    padding: 0;
     margin: 0 auto !important;
-    overflow: visible;
-    font-size: 52%;
-    background: none !important;
     border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+    background: none !important;
+    font-size: 52%;
   }
 
-  .progress,
-  .controls {
+  .progress, .controls {
     display: none;
   }
 
@@ -628,11 +242,11 @@ pre .xml .cdata {
   }
 
   .slide-content {
+    border: 1px solid #222;
     margin-top: 0;
     margin-bottom: 40px;
     height: 3.5in;
     overflow: visible;
-    border: 1px solid #222;
   }
 
   .slide:nth-child(even) {
@@ -641,6 +255,107 @@ pre .xml .cdata {
   }
 }
 
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
   </style>
 </head>
 <body>
@@ -648,12 +363,12 @@ pre .xml .cdata {
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide" id="slide-1">
+  <div class="slide " id="slide-1">
     <section class="slide-content"><h3 id="blockchain-introduction">Blockchain Introduction</h3>
 <p><img src="imgs/bitcoin.svg" alt="Bitcoin Use Diagram" style="height: 400px;"/></p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-2">
+  <div class="slide hidden -" id="slide-2">
     <section class="slide-content"><h3 id="overview-">Overview:</h3>
 <ul>
 <li>What is a Blockchain?</li>
@@ -668,20 +383,20 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-3">
+  <div class="slide hidden " id="slide-3">
     <section class="slide-content"><h3 id="what-is-a-blockchain-">What is a Blockchain?</h3>
 <p>A blockchain is essentially just a record of digital events — one that’s “distributed” or shared between many different parties.</p>
 <p>This record is a distributed database over a peer to peer network which is constantly growing.</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-4">
+  <div class="slide hidden " id="slide-4">
     <section class="slide-content"><h3 id="bitcoin-s-blockchain-">Bitcoin&#39;s Blockchain:</h3>
 <p>The record is a public ledger on which the entire Bitcoin network relies.</p>
 <p>It has all confirmed transactions that ever happened on the network.</p>
 <p>E.g. <small><em><a>Alice</a></em> paid <em><a>Bob</a></em> 4.2Ƀ at <em>13:37 26-04-2016</em></small></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden " id="slide-5">
     <section class="slide-content"><h3 id="properties-of-a-blockchain">Properties of a Blockchain</h3>
 <ul>
 <li>Events are recorded in chronological order into &#39;Blocks&#39;</li>
@@ -690,7 +405,7 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden " id="slide-6">
     <section class="slide-content"><h3 id="bitcoin-s-blockchain-properties-">Bitcoin&#39;s Blockchain Properties:</h3>
 <ul>
 <li>Transactions are events, batched into blocks</li>
@@ -700,7 +415,7 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
+  <div class="slide hidden " id="slide-7">
     <section class="slide-content"><h3 id="blockchain-operations">Blockchain Operations</h3>
 <ul>
 <li>Most operations will be clients reading (and verifying new blocks)</li>
@@ -713,7 +428,7 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-8">
+  <div class="slide hidden " id="slide-8">
     <section class="slide-content"><h3 id="what-s-in-a-block-">What&#39;s in a block?</h3>
 <p>Each new block contains:</p>
 <ul>
@@ -723,7 +438,7 @@ pre .xml .cdata {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden " id="slide-9">
     <section class="slide-content"><h3 id="proof-of-work">Proof of Work</h3>
 <p>One way functions (e.g. cryptographic hashes like SHA256)
 Computationally cheap to verify.</p>
@@ -731,24 +446,24 @@ Computationally cheap to verify.</p>
 <p>Computationally expensive limits the number of new blocks</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden " id="slide-10">
     <section class="slide-content"><h3 id="verifying-the-chain">Verifying the Chain</h3>
 <p>Not relying on timestamp itself or any numerical sequence for order</p>
 <p>Instead, verify our one way function.</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden " id="slide-11">
     <section class="slide-content"><h3 id="verifying-the-chain">Verifying the Chain</h3>
 <p><img src="imgs/bitcoin-block-chain.png" alt="Bitcoin Blockchain" style="width:420px;"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden " id="slide-12">
     <section class="slide-content"><h3 id="verifying-the-chain">Verifying the Chain</h3>
 <p>In event multiple block 52s announced, network prefers longest valid chain after 52.</p>
 <p>More computationally expensive to get ahead of network than to generate new blocks honestly.</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden " id="slide-13">
     <section class="slide-content"><h3 id="recent-blockchain-implementations">Recent Blockchain Implementations</h3>
 <ul>
 <li>Data is not just a record of what happened, but actual programs</li>
@@ -757,9 +472,9 @@ Computationally cheap to verify.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
+  <div class="slide hidden " id="slide-14">
     <section class="slide-content"><h3 id="recent-blockchain-implementations">Recent Blockchain Implementations</h3>
-<p><em>Smart Contracts</em></p>
+<p><em><a href="https://www.ethereum.org/token">Smart Contracts</a></em></p>
 <ul>
 <li><p>decentralized network confirms that a contract of any kind was executed properly</p>
 </li>
@@ -768,32 +483,37 @@ Computationally cheap to verify.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden " id="slide-15">
     <section class="slide-content"><h3 id="recent-blockchain-implementations">Recent Blockchain Implementations</h3>
 <p>Because of this, not only can we extend bitcoin, we can create a variety of services on top of the blockchain.</p>
 <p>Think DNS, HTTP, reddit/twitter/facebook, etc</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden " id="slide-16">
     <section class="slide-content"><h3 id="why-blockchain-">Why Blockchain?</h3>
 <p>Permissionless - no &#39;trusted party&#39; required in order to participate</p>
 <p>Decentralisation - no single point of failure in the system</p>
 <p>Privacy - pseudonymous, no need to disclose personal information to authenicate/verify</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-17">
+  <div class="slide hidden " id="slide-17">
     <section class="slide-content"><h3 id="who-s-using-it-">Who&#39;s using it?</h3>
-<p>Bank Of Ireland - successful trail April 16</p>
+<p>Bank Of Ireland - successful trial (April 2016)</p>
 <p>Eestipank (Bank of Estonia, estonia has lowest card fraud rate in Eurozone)</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-18">
+  <div class="slide hidden " id="slide-18">
     <section class="slide-content"><h3 id="build-your-own">Build your own</h3>
-<p>Ethereum (ethereum.org) is a good start</p>
+<p><a href="ethereum.org">Ethereum</a> is a good start</p>
 <p>The startup has written a web app and programming language to define contracts (open source)</p>
+<p><a href="http://www.multichain.com/">Multichain</a></p>
 </section>
   </div>
-  <div class="slide hidden author-slide" id="slide-19">
+  <div class="slide hidden " id="slide-19">
+    <section class="slide-content"><h3 id="questions-">Questions?</h3>
+</section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-20">
     <section class="slide-content"><div class="author">
   <h1 class="name">Blain Maguire</h1>
     <h3 class="twitter">
@@ -848,7 +568,11 @@ function navigate(n) {
  * Updates the current URL to include a hashtag of the current page number.
  */
 function updateURL() {
-  window.history.replaceState({} , null, '#' + currentPosition());
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
 }
 
 
@@ -958,6 +682,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 });
+
 
   </script>
 </body>
